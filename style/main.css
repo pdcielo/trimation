@@ -1,0 +1,127 @@
+:root{
+    --roxo: #9455c9;
+    --azul: #190a5e;
+    --preto: rgb(32, 30, 30);
+    --branco: rgb(255, 255, 255);
+}
+ 
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*elementos base*/
+body {
+    background: var(--preto);
+    font-family: 'Times New Roman', Times, serif;
+ }
+
+header .container{
+    border: 1px solid;
+    display: flex;
+    flex-direction: row;
+    align-items:center;
+    justify-content: space-between;
+}
+
+header .logo{
+    margin-left: 5px;
+    margin-right: auto;
+    margin-top: 5px;
+    color: var(--roxo);
+    font-family: 'Arial Black', Times;
+    font-size: 40px;
+}
+
+header nav a{
+    text-decoration: none;
+    color: #8F55D0;
+    margin-right:10px;
+    
+}
+
+header nav a:hover{
+    color: #783C82;
+}
+.letras{
+    font-size: 125%;
+    margin-right: 50px;
+}
+.imagem{
+    width: 50px;
+    margin-top: 5px;
+    margin-right: 5px;
+    
+}
+/*anime principal*/
+.anime-principal{
+    font-size: 16px;
+    background: linear-gradient(rgba(0,0,0,.50),rgba(0,0,0,.70)100%), url('/dio_html/trimation/img/one-piece.jpg');
+
+    width: 100%;
+    height: 800px;
+    background-size: cover;
+
+    display: flex;
+    flex-direction:column;
+    justify-content:space-around;
+    align-items: flex-start;
+}
+
+.anime-principal .descricao{
+    margin-top: 10px;
+    margin-bottom: 20px;
+    color: var(--branco);
+    font-size: 120%;
+
+}
+
+.anime-principal .titulo{
+    margin-top: 15%;
+    font-size: 55px;
+    font-family:'Trebuchet MS',  Arial, sans-serif;
+    color: var(--branco);
+
+}
+
+.botao{
+    background-color: rgba(90, 23, 104, 0.5);
+    border: none;
+    color: white;
+
+    padding: 15px 30px;
+    margin-right: 15px;
+    margin-bottom: 200px;
+    font-size: 12px;
+
+    cursor: pointer;
+    transition: 1s ease all;
+}
+
+.botao:hover{
+    background-color: rgb(255, 253, 255);
+    color: rgba(90, 23, 104);
+}
+
+.botao i{
+    margin-right: 6px;
+}
+
+.container{
+    margin-right: 5px;
+    margin-left: 5px;
+}
+.anime-principal .container{
+    width: 80%;
+}
+
+.box-anime{
+    height: 100%;
+    width: 100%;
+    display: block;
+}
+
+.carrosel-animes{
+    margin-top: 5px;
+}
